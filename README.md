@@ -11,7 +11,7 @@
   <img src="https://img.shields.io/badge/GPU-2×%20T4-76B900?style=for-the-badge&logo=nvidia&logoColor=white" height="35"/>
 </p>
 
-> End-to-end deep learning pipeline for **building footprint extraction** from satellite and drone imagery — spanning 8-band multispectral training (SpaceNet-1), 3-band RGB evaluation, and full cross-domain transfer learning to Indian drone imagery (Svamitva). Three architectures compared: custom U-Net, fine-tuned SAM ViT-B, and YOLOv8-Nano.
+> This project presents an end-to-end deep learning pipeline for automated building footprint extraction from overhead imagery. Developed as an internship project at IDEAS, Indian Statistical Institute Kolkata, it trains a custom 8-channel U-Net and fine-tunes SAM ViT-B on the SpaceNet-1 multispectral satellite dataset, achieving a Mean IoU of 0.613 on the test set. The models are then adapted to 3-band Indian drone imagery (Svamitva dataset) via targeted network surgery and transfer learning, achieving 92% pixel-level accuracy — enabling scalable automated building mapping for India's rural land survey program.
 
 📓 [oiu-sd Notebook](notebooks/oiu-sd.ipynb) · 📓 [SpaceNet1 Eval Notebook](notebooks/spacenet1-unet-sam-3band-evaluation.ipynb) · 🗃️ [Dataset Links](data/dataset_links.md)
 
